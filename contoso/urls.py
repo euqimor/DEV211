@@ -15,9 +15,7 @@ Including another URLconf
 """
 from django.conf.urls import url
 from django.contrib import admin
-from contoso import views as contoso_views
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^$', contoso_views.home, name='home_page'),
 ]
