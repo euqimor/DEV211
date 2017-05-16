@@ -1,0 +1,19 @@
+@font-face {
+    font-family: Caveat;
+    src: url('/contoso/static/fonts/mod3_caveat.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: Chonburi;
+    src: url('/contoso/static/fonts/mod3_chonburi.ttf') format('truetype');
+}
+
+
+@font-face {
+    font-family: Itim;
+    src: url('/contoso/static/fonts/mod3_itim.ttf') format('truetype');
+}
+
+body {
+    font-family: Itim;
+}
