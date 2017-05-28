@@ -4,7 +4,11 @@
 <head>
     <title>Contoso News</title>
     <!--<link href="{% static "CSS/style.css" %}" rel="stylesheet" type="text/css" media="screen" />-->
+    <link rel="stylesheet" href="../static/CSS/owl.carousel.min.css">
+    <link rel="stylesheet" href="../static/CSS/owl.theme.default.min.css">
     <link href="../static/CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
+    <script src="../static/js/owl.carousel.min.js"></script>
     <script src="../static/js/script.js" type="text/javascript"></script>
 </head>
 <body>
@@ -12,7 +16,7 @@
     <h1>Contoso News</h1>
     <h2>On Time, On Topic</h2>
 </header>
-<section id="carousel">
+<section id="carousel" class="owl-carousel  owl-theme">
    <figure class="visible">
        <img src="../static/img/mod4_efficient_cars.png" alt="Efficient Cars" />
        <figcaption>2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
