@@ -2,44 +2,49 @@
 <!--{% load static %}-->
 <html lang="en-US">
 <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Contoso News</title>
     <!--<link href="{% static "CSS/style.css" %}" rel="stylesheet" type="text/css" media="screen" />-->
-    <link rel="stylesheet" href="../static/CSS/owl.carousel.min.css">
-    <link rel="stylesheet" href="../static/CSS/owl.theme.default.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
     <link href="../static/CSS/style.css" rel="stylesheet" type="text/css" media="screen" />
     <script src="https://code.jquery.com/jquery-2.2.4.min.js" type="text/javascript"></script>
-    <script src="../static/js/owl.carousel.min.js"></script>
-    <script src="../static/js/script.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!--<script src="../static/js/script.js" type="text/javascript"></script>-->
 </head>
-<body>
+<body class="container">
 <header>
     <h1>Contoso News</h1>
     <h2>On Time, On Topic</h2>
 </header>
-<section id="carousel" class="owl-carousel  owl-theme">
-   <figure class="visible">
-       <img src="../static/img/mod4_efficient_cars.png" alt="Efficient Cars" />
-       <figcaption>2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
-   </figure>
-    <figure>
-        <img src="../static/img/mod4_natural_disaster.png" alt="Natural Disaster"/>
-        <figcaption>Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
-    </figure>
-    <figure>
-        <img src="../static/img/mod4_health_records.png" alt="Health Records" />
-        <figcaption>Many Doctors are Moving to Digital Health Records This Year</figcaption>
-    </figure>
+<section class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner" role="listbox">
+       <figure class="active item">
+           <img src="../static/img/mod4_efficient_cars.png" alt="Efficient Cars" />
+           <figcaption class="carousel-caption">2017 Cars Promise to be More Fuel Efficient Than Ever</figcaption>
+       </figure>
+        <figure class="item">
+            <img src="../static/img/mod4_natural_disaster.png" alt="Natural Disaster"/>
+            <figcaption class="carousel-caption">Hurricane Threatens to Touch Down on the East Coast This Weekend</figcaption>
+        </figure>
+        <figure class="item">
+            <img src="../static/img/mod4_health_records.png" alt="Health Records" />
+            <figcaption class="carousel-caption">Many Doctors are Moving to Digital Health Records This Year</figcaption>
+        </figure>
+    </div>
 </section>
-<main>
+<main class="row">
     <h3>Latest Articles</h3>
-    <article>
+    <article class="well col-md-4">
         <time datetime="16-01-2016">Friday, Jan 16</time>
         <h4>International Story</h4>
         <p>Curabitur pharetra luctus augue, non posuere orci tristique vel. Sed posuere nisi nec lacus ullamcorper, ac vulputate nisl consequat. Nullam sollicitudin nulla vel felis faucibus aliquam. Nunc sit amet velit orci. Proin sed orci fringilla, elementum felis condimentum, convallis augue. Aliquam erat volutpat. Mauris tempus nunc sit amet aliquet bibendum. Praesent vestibulum cursus ex, quis laoreet eros consectetur ac. Ut congue libero quis mauris egestas feugiat. Sed pharetra lorem et magna fringilla, a volutpat nibh sollicitudin. Nullam sagittis sollicitudin urna, sed sollicitudin mauris ornare id.
         <a href="#" target="_blank">Read More...</a>
         </p>
     </article>
-    <article>
+    <article class="well col-md-4">
         <time datetime="14-01-2016">Wednesday, Jan 14</time>
         <h4>Finance Story</h4>
         <p>
@@ -54,7 +59,7 @@
         <a href="#" target="_blank">Read More...</a>
         </p>
     </article>
-    <article>
+    <article class="well col-md-4">
         <time datetime="14-01-2016">Wednesday, Jan 14</time>
         <h4>Technology Story</h4>
         <p>Morbi eget justo ut velit dapibus malesuada. Nunc elementum, neque quis convallis tempus, lacus ante tristique est, id porta tortor leo eget orci. Suspendisse hendrerit interdum lacus et condimentum. Mauris at ex dignissim, bibendum libero at, fermentum lectus. Maecenas porttitor purus quis augue interdum, eget malesuada neque placerat. Ut hendrerit risus in nibh elementum, quis vestibulum ipsum vulputate. Nulla facilisi. In consectetur et lacus vel tincidunt. Quisque feugiat ipsum et erat rhoncus efficitur. In in augue at enim tempor sollicitudin.
@@ -62,9 +67,9 @@
         </p>
     </article>
 </main>
-<h4>Sign Up For Our Emails</h4>
-<summary>
-    <form>
+<summary class="panel panel-default col-md-8 col-md-offset-2">
+    <div class="panel-heading">Sign Up For Our Emails</div>
+    <form class="form-horizontal panel-body">
         <label>E-Mail Address:</label>
         <input type="text" required="required" />
         <label>Delivery Preference:</label>

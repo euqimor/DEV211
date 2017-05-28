@@ -21,9 +21,6 @@
     header {
         padding: 0px;
     }
-    article {
-        box-shadow: none;
-    }
     header h1 {
         font-size: 2em;
     }
@@ -33,7 +30,7 @@
 }
 
 body {
-    font-family: 'News Cycle';
+    font-family: 'News Cycle' !important;
 }
 
 header {
@@ -87,24 +84,31 @@ article {
     box-shadow: -1px -1px 6px #888888;
 }
 
-section#carousel > figure > img { /*This rule will hide the figure elements by default*/
-    display: none;
-    margin: 0 auto;
-}
-
-section#carousel > figure.visible > img { /*This rule will show only the figure elements that reference the class "visible"*/
-    display: block;
-    position: relative;
-    overflow: hidden;
-}
-
-section#carousel > figure > figcaption { /*This rule will hide the figcaption elements by default*/
-    display: none;
-}
-
-section#carousel > figure.visible > figcaption { /*This rule will only show the figcaption elements that reference the class "visible"*/
-    display: block;
+.carousel-inner {
     text-align: center;
-    font-weight: bold;
-    font-size: 1.5em;
 }
+
+.carousel .item > img {
+    display: inline-block;
+}
+/*section#carousel > figure > img { !*This rule will hide the figure elements by default*!*/
+    /*display: none;*/
+    /*margin: 0 auto;*/
+/*}*/
+
+/*section#carousel > figure.visible > img { !*This rule will show only the figure elements that reference the class "visible"*!*/
+    /*display: block;*/
+    /*position: relative;*/
+    /*overflow: hidden;*/
+/*}*/
+
+/*section#carousel > figure > figcaption { !*This rule will hide the figcaption elements by default*!*/
+    /*display: none;*/
+/*}*/
+
+/*section#carousel > figure.visible > figcaption { !*This rule will only show the figcaption elements that reference the class "visible"*!*/
+    /*display: block;*/
+    /*text-align: center;*/
+    /*font-weight: bold;*/
+    /*font-size: 1.5em;*/
+/*}*/
